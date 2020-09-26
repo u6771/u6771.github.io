@@ -5,17 +5,17 @@
   
 
   
-  <title>欢迎🤡的光临！</title>
+  <title>欢迎🤡的光顾！</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="欢迎🤡的光临！">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="欢迎🤡的光临！">
+<meta property="og:title" content="欢迎🤡的光顾！">
+<meta property="og:url" content="http://u6771.github.io/index.html">
+<meta property="og:site_name" content="欢迎🤡的光顾！">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="兄弟会">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="欢迎🤡的光临！" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="欢迎🤡的光顾！" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -36,7 +36,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">欢迎🤡的光临！</a>
+        <a href="/" id="logo">欢迎🤡的光顾！</a>
       </h1>
       
         <h2 id="subtitle-wrap">
@@ -60,13 +60,292 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://u6771.github.io"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-school2/math/linear algebra" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/25/school2/math/linear%20algebra/" class="article-date">
+  <time datetime="2020-09-24T16:00:00.000Z" itemprop="datePublished">2020-09-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/math/">math</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/25/school2/math/linear%20algebra/">Notes on linear algerba</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+extensions: ["tex2jax.js"],
+tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","MathMenu.js", 
+"MathZoom.js",
+"color.js", "https://sonoisa.github.io/xyjax_ext/xypic.js"],
+Macros: {
+Ker: "{\\mathop{\\mathrm{Ker}}}",
+Im: "{\\mathop{\\mathrm{Im}}}"
+}
+}
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<h2 id="Mathjax-macro-test"><a href="#Mathjax-macro-test" class="headerlink" title="Mathjax macro test"></a>Mathjax macro test</h2><script type="math/tex; mode=display">
+\dim U = \dim \Ker(T) + \dim \Im(T)</script><h2 id="Definition-a-linear-maps"><a href="#Definition-a-linear-maps" class="headerlink" title="Definition a linear maps"></a>Definition a linear maps</h2><p>A linear map $T: U \to V$, where $U$ is $n$-dimensional and $V$ is $m$ dimensional is defined in the form:</p>
+<script type="math/tex; mode=display">
+T(y_{1}, \cdots, y_{n}) = (x_{1}, \cdots, x_{m}),</script><p>where</p>
+<script type="math/tex; mode=display">
+x_{i} = \sum_{j=1}^{n}a_{i,j}y_{j},
+\ a_{i,j},y_{j} \in \mathbb{R},
+\ i \in \{1, \cdots ,m\},
+\ j \in \{1, \cdots ,n\}.</script><p>A way to understand linear maps is to see each $x_{i}$ as a linear combination of the 1-dimensional vectors $y_{j}$’s with scalars $a_{i,j}$’s.</p>
+<script type="math/tex; mode=display">
+T(y_{1}, \cdots, y_{n})
+= \sum_{j=1}^{n}y_{j}(a_{1,j}, \cdots, a_{m,j})</script><h2 id="Properties-of-linear-maps"><a href="#Properties-of-linear-maps" class="headerlink" title="Properties of linear maps"></a>Properties of linear maps</h2><h3 id="Additivity-“-T-u-1-u-2-T-u-1-T-u-2-”"><a href="#Additivity-“-T-u-1-u-2-T-u-1-T-u-2-”" class="headerlink" title="Additivity “$T(u_{1}+u_{2}) = T(u_{1})+T(u_{2})$”"></a>Additivity “$T(u_{1}+u_{2}) = T(u_{1})+T(u_{2})$”</h3><p>$y_{j}, z_{j} \in F$</p>
+<script type="math/tex; mode=display">
+\begin{align}
+T(y_{1}+z_{1}, \cdots, y_{n}+z_{n})
+&= (\sum_{j=1}^{n}a_{1,j}(y_{j}+z_{j}), \cdots, \sum_{j=1}^{n}a_{m,j}(y_{j}+z_{j}))\\
+&= (\sum_{j=1}^{n}(a_{1,j}y_{j} + a_{1,j}z_{j}), \cdots, \sum_{j=1}^{n}(a_{m,j}y_{j} + a_{m,j}z_{j}))
+&& \text{(by distributivity)}\\
+&= (\sum_{j=1}^{n}a_{1,j}y_{j} + \sum_{j=1}^{n}a_{1,j}z_{j}, \cdots, \sum_{j=1}^{n}a_{m,j}y_{j} + \sum_{j=1}^{n}a_{m,j}z_{j})
+&& \text{(by commutativity of addition)}\\
+&= (\sum_{j=1}^{n}a_{1,j}y_{j}, \cdots, \sum_{j=1}^{n}a_{m,j}y_{j})
++ (\sum_{j=1}^{n}a_{1,j}z_{j}, \cdots, \sum_{j=1}^{n}a_{m,j}z_{j})\\
+&= T(y_{1}, \cdots, y_{n}) + T(z_{1}, \cdots, z_{n})
+\end{align}</script><h3 id="Homogeneity-“-T-lambda-u-lambda-T-u-”"><a href="#Homogeneity-“-T-lambda-u-lambda-T-u-”" class="headerlink" title="Homogeneity “$T(\lambda u) = \lambda T(u)$”"></a>Homogeneity “$T(\lambda u) = \lambda T(u)$”</h3><p>$\lambda, y_{j} \in F$</p>
+<script type="math/tex; mode=display">
+\begin{align}
+T(\lambda y_{1}, \cdots, \lambda y_{n})
+&= (\sum_{j=1}^{n}a_{1,j}(\lambda y_{j}), \cdots, \sum_{j=1}^{n}a_{m,j}(\lambda y_{j}))\\
+&= (\sum_{j=1}^{n}\lambda(a_{1,j}y_{j}), \cdots, \sum_{j=1}^{n}\lambda(a_{m,j}y_{j}))
+&& \text{(by commutativity of multiplication)}\\
+&= (\lambda(\sum_{j=1}^{n}a_{1,j}y_{j}), \cdots, \lambda(\sum_{j=1}^{n}a_{m,j}y_{j}))
+&& \text{(by distributivity)}\\
+&= \lambda(\sum_{j=1}^{n}a_{1,j}y_{j}, \cdots, \sum_{j=1}^{n}a_{m,j}y_{j})\\
+&= \lambda T(y_{1}, \cdots, y_{n})
+\end{align}</script><h2 id="Invertability-is-equivalent-to-injectivity-and-surjectivity"><a href="#Invertability-is-equivalent-to-injectivity-and-surjectivity" class="headerlink" title="Invertability is equivalent to injectivity and surjectivity"></a>Invertability is equivalent to injectivity and surjectivity</h2><h3 id="An-invertable-linear-map-is-injective"><a href="#An-invertable-linear-map-is-injective" class="headerlink" title="An invertable linear map is injective"></a>An invertable linear map is injective</h3><script type="math/tex; mode=display">
+u_{1} = T^{-1}(Tu_{1}) = T^{-1}(Tu_{2}) = u_{2}</script><h3 id="An-invertable-linear-map-is-surjective"><a href="#An-invertable-linear-map-is-surjective" class="headerlink" title="An invertable linear map is surjective"></a>An invertable linear map is surjective</h3><script type="math/tex; mode=display">
+T(T^{-1}v) = v</script><h3 id="An-injective-and-surjective-map-is-invertable"><a href="#An-injective-and-surjective-map-is-invertable" class="headerlink" title="An injective and surjective map is invertable"></a>An injective and surjective map is invertable</h3><script type="math/tex; mode=display">
+\xymatrix{
+U\ar@/^/[rr]^{T} && V\ar@/^/[ll]^{S}
+}</script><script type="math/tex; mode=display">
+T(Sv)= v</script><p>The existence and uniqueness of the equation above is suggested by the surjectivity and injectivity of $T$.</p>
+<script type="math/tex; mode=display">
+T(S \circ Tu) = T \circ S(Tu) = T(u)</script><h3 id="S-is-linear"><a href="#S-is-linear" class="headerlink" title="S is linear"></a>S is linear</h3><script type="math/tex; mode=display">
+\begin{align}
+T(Sv_{1}+Sv_{2})
+= T \circ S(v_{1}) + T \circ S(v_{2})
+= v_{1} + v_{2}
+= T(S(v_{1}+v_{2}))
+\end{align}</script><p>Because $T$ is injective, $S(v_{1}+v_{2}) = Sv_{1}+Sv_{2}$. $S$ is additive.</p>
+<script type="math/tex; mode=display">
+T(\lambda Sv) = \lambda T \circ S(v) = \lambda v = T(S(\lambda v))</script><p>Because $T$ is injective, $S(\lambda v) = \lambda Sv$. $S$ is homogeneous. $\square$</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://u6771.github.io/2020/09/25/school2/math/linear%20algebra/" data-id="ckfjfx90y0009qotxel7phw1m" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-school2/perspective" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/24/school2/perspective/" class="article-date">
+  <time datetime="2020-09-24T03:30:49.582Z" itemprop="datePublished">2020-09-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/24/school2/perspective/">school2/perspective</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Perspective"><a href="#Perspective" class="headerlink" title="Perspective"></a>Perspective</h3><p>Perspective is the way in which an object or event is viewed.</p>
+<h3 id="What-shapes-perspectives"><a href="#What-shapes-perspectives" class="headerlink" title="What shapes perspectives"></a>What shapes perspectives</h3><ol>
+<li>Education<ul>
+<li>teachers</li>
+<li>parents</li>
+<li>school</li>
+<li>internet</li>
+</ul>
+</li>
+<li>Media<ul>
+<li>social communication (biased)</li>
+<li>news (political agenda)</li>
+</ul>
+</li>
+<li>Experiences<ul>
+<li>mistakes</li>
+<li>emotions</li>
+</ul>
+</li>
+<li>Friends and family<ul>
+<li>memories</li>
+</ul>
+</li>
+<li>Age</li>
+<li>Culture </li>
+<li>Technology<ul>
+<li>science</li>
+<li>gaming</li>
+<li>AI</li>
+</ul>
+</li>
+<li>Religion</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://u6771.github.io/2020/09/24/school2/perspective/" data-id="ckfjfx90j0001qotx5mcw2l07" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-school2/physics/linearization-of-logarithmic-functions" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/24/school2/physics/linearization-of-logarithmic-functions/" class="article-date">
+  <time datetime="2020-09-23T16:00:00.000Z" itemprop="datePublished">2020-09-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/physics/">physics</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/24/school2/physics/linearization-of-logarithmic-functions/">Linearization of logarithmic functions</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script type="math/tex; mode=display">
+y = ae^{bx}</script><script type="math/tex; mode=display">
+\ln(y) = bx + \ln(a)</script><script type="math/tex; mode=display">
+\begin{align}
+\ln(y) &= \ln(ae^{bx})\\
+&= \ln(a) + \ln(e^{bx})\\
+&= \ln(a) + bx\ln(e)\\
+&= bx + \ln(a)
+\end{align}</script><script type="math/tex; mode=display">
+y = ax^{n} + b</script>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://u6771.github.io/2020/09/24/school2/physics/linearization-of-logarithmic-functions/" data-id="ckfjfx90z000aqotx57qu147x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-school2/music/rationale" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/23/school2/music/rationale/" class="article-date">
+  <time datetime="2020-09-22T16:00:00.000Z" itemprop="datePublished">2020-09-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/music/">music</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/23/school2/music/rationale/">Rationale</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Rationale (100-200 words)</p>
+<ul>
+<li>why you do something (science/research)</li>
+<li>guide for research</li>
+</ul>
+<p>Music decision making</p>
+<ul>
+<li>key change</li>
+<li>style change </li>
+<li>tempo change</li>
+<li>instrumentation change</li>
+</ul>
+<p>We will try to rearrange the piece into a trio, consisting of a piano, an electric bass and a guitar. Firstly, this adds timbral interest to the music.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://u6771.github.io/2020/09/23/school2/music/rationale/" data-id="ckfjfx90x0007qotx17ot5rb2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-school2/Untitled" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -90,19 +369,134 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>$a = bc$</p>
-<script type="math/tex; mode=display">
-\begin{align}
-\Delta a 
-&= (b+\Delta b)(c+\Delta c) - bc\\
-&= bc + b\Delta c + c\Delta b + \Delta b\Delta c - bc\\
-&= bc\frac{\Delta c}{c} + bc\frac{\Delta b}{b} + \Delta b\Delta c\\
-&= a(\frac{\Delta b}{b} + \frac{\Delta c}{c}) + \Delta b\Delta c
-\end{align}</script>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/09/22/school2/Untitled/" data-id="ckfdwo6yr0000gstxdx3y6vis" class="article-share-link">Share</a>
+      <a data-url="http://u6771.github.io/2020/09/22/school2/Untitled/" data-id="ckfjfx8zu0000qotx1w05aquz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-school2/economics/unit 1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/22/school2/economics/unit%201/" class="article-date">
+  <time datetime="2020-09-21T16:00:00.000Z" itemprop="datePublished">2020-09-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/economics/">economics</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/22/school2/economics/unit%201/">Chapter 1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Leakages"><a href="#Leakages" class="headerlink" title="Leakages"></a>Leakages</h3><ul>
+<li>Taxes</li>
+<li>Saving</li>
+<li>Imports</li>
+</ul>
+<h3 id="Injections"><a href="#Injections" class="headerlink" title="Injections"></a>Injections</h3><ul>
+<li>Government spending</li>
+<li>Investment</li>
+<li>Exports</li>
+</ul>
+<h3 id="Nominal-GDP-Formula"><a href="#Nominal-GDP-Formula" class="headerlink" title="Nominal GDP Formula"></a>Nominal GDP Formula</h3><script type="math/tex; mode=display">
+C+I+G+(X-M)</script><ul>
+<li>C: Consumption</li>
+<li>I: Investment</li>
+<li>G: Government spending</li>
+<li>X: Exports</li>
+<li>M: Imports</li>
+</ul>
+<h3 id="Non-of-the-economics-are-“right”"><a href="#Non-of-the-economics-are-“right”" class="headerlink" title="Non of the economics are “right”"></a>Non of the economics are “right”</h3><p>![[Pasted image 20200924141512.png]]</p>
+<p>There are many different ways of “conceptualizing and explaining the economy”. This gives rise to very different economic theories and models, non of which is “right”.</p>
+<h3 id="the-“invisible-hand”"><a href="#the-“invisible-hand”" class="headerlink" title="the “invisible hand”"></a>the “invisible hand”</h3><p>The “invisible hand” is the people guides supply and demand.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://u6771.github.io/2020/09/22/school2/economics/unit%201/" data-id="ckfjfx90o0002qotxb4ilbe3s" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-school2/math/series" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/22/school2/math/series/" class="article-date">
+  <time datetime="2020-09-21T16:00:00.000Z" itemprop="datePublished">2020-09-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/math/">math</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/22/school2/math/series/">Series</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script type="math/tex; mode=display">
+\def\Ker{\mathop{\mathrm{Ker}}}
+\def\Im{\mathop{\mathrm{Im}}}</script><h3 id="Definition-of-the-sum-function"><a href="#Definition-of-the-sum-function" class="headerlink" title="Definition of the sum function"></a>Definition of the sum function</h3><script type="math/tex; mode=display">
+S(x_n) = \sum_{i=1}^n x_i</script><h3 id="Arithmetic-series"><a href="#Arithmetic-series" class="headerlink" title="Arithmetic series"></a>Arithmetic series</h3><p>An arithmetic series is a sequence in which every two consecutive terms have a common difference - “$d$”.</p>
+<script type="math/tex; mode=display">
+a_n = a_1 + (n-1)d</script><script type="math/tex; mode=display">
+S(a_n) = n\frac{a_1+a_n}{2}</script><h3 id="Geometric-series"><a href="#Geometric-series" class="headerlink" title="Geometric series"></a>Geometric series</h3><p>A geometric series is a sequence in which every two consecutive terms have a common quotient - “$q$”.</p>
+<script type="math/tex; mode=display">
+g_n = g_1q^{n-1}</script><script type="math/tex; mode=display">
+S(g_n) = g_1\frac{1-q^n}{1-q}</script><p>$S(g_n)$ converges for any $q&lt;1$, because $q^n \to 0$ as $n \to \infty$. Therefore we can find a formula for the infinite sum of a geometric sequence as the following.</p>
+<script type="math/tex; mode=display">
+\lim_{n \to \infty} S(g_{n}) 
+= \lim_{n \to \infty} g_1\frac{1-q^n}{1-q} 
+= \frac{g_1}{1-q}</script><h3 id="Other-series"><a href="#Other-series" class="headerlink" title="Other series"></a>Other series</h3><script type="math/tex; mode=display">
+\begin{align}
+a_1,\quad a_2,\quad a_3,\quad a_4\\
+b_1, \quad b_2, \quad b_3 \quad \,
+\end{align}</script><p>For sequences in which every two consecutive terms have a difference $a_n-a_{n-1}$ equal to a corresponding term $b_{n-1}$ in an arithmetic sequence, its rule can be find as the following.</p>
+<script type="math/tex; mode=display">
+a_n = a_1 + S(b_{n-1}) 
+= a_1 + (n-1)\frac{b_1+b_{n-1}}{2}
+= a_1 + (n-1)\frac{2b_1+(n-2)d}{2}</script><p>Alice has some money</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://u6771.github.io/2020/09/22/school2/math/series/" data-id="ckfjfx90q0003qotxcedz3oij" class="article-share-link">Share</a>
       
       
     </footer>
@@ -154,58 +548,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/09/22/school2/chinese/%E8%AF%AD%E5%A2%83/" data-id="ckfdwo6z80001gstx65yz085a" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-school2/math/series" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/22/school2/math/series/" class="article-date">
-  <time datetime="2020-09-21T16:00:00.000Z" itemprop="datePublished">2020-09-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/math/">math</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/22/school2/math/series/">Series</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="Definition-of-the-sum-function"><a href="#Definition-of-the-sum-function" class="headerlink" title="Definition of the sum function"></a>Definition of the sum function</h3><script type="math/tex; mode=display">
-S(x_n) = \sum_{i=1}^n x_i</script><h3 id="Arithmetic-series"><a href="#Arithmetic-series" class="headerlink" title="Arithmetic series"></a>Arithmetic series</h3><p>An arithmetic sequence is a sequence in which every two consecutive terms have a common difference - “$d$”.</p>
-<script type="math/tex; mode=display">
-a_n = a_1 + (n-1)d</script><script type="math/tex; mode=display">
-S(a_n) = n\frac{a_1+a_n}{2}</script><h3 id="Geometric-series"><a href="#Geometric-series" class="headerlink" title="Geometric series"></a>Geometric series</h3><p>A geometric sequence is a sequence in which every two consecutive terms have a common quotient - “$q$”.</p>
-<script type="math/tex; mode=display">
-g_n = g_1q^{n-1}</script><script type="math/tex; mode=display">
-S(g_n) = g_1\frac{1-q^n}{1-q}</script><p>$S(g_n)$ converges for any $q&lt;1$, because $q^n \to 0$ as $n \to \infty$. Therefore we can find a formula for the infinite sum of a geometric sequence as the following.</p>
-<script type="math/tex; mode=display">
-\lim_{n \to \infty} S(g_{n}) 
-= \lim_{n \to \infty} g_1\frac{1-q^n}{1-q} 
-= \frac{g_1}{1-q}</script>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/09/22/school2/math/series/" data-id="ckfdwo6za0002gstx7af882jy" class="article-share-link">Share</a>
+      <a data-url="http://u6771.github.io/2020/09/22/school2/chinese/%E8%AF%AD%E5%A2%83/" data-id="ckfjfx90u0005qotx8rhm6zyn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -233,7 +576,7 @@ S(g_n) = g_1\frac{1-q^n}{1-q}</script><p>$S(g_n)$ converges for any $q&lt;1$, be
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/22/school2/music/social%20political/">Social Political Music</a>
+      <a class="article-title" href="/2020/09/22/school2/music/social%20political/">Social political music</a>
     </h1>
   
 
@@ -244,16 +587,18 @@ S(g_n) = g_1\frac{1-q^n}{1-q}</script><p>$S(g_n)$ converges for any $q&lt;1$, be
         <p>Shostakovich - Symphony No.9 in E$\flat$ major.</p>
 <ul>
 <li>Composer’s 9<sup>th</sup> symphonies usually follows the tradition of being the longest, grandest and most dramatic.</li>
+<li>Written in 1945, when Germany was defeated.</li>
 <li>Stalin was very aware of this and wanted Shostakovich’s 9<sup>th</sup> to be a massive celebration of the victory parade at the Red Square in Moscow.</li>
+<li>The symphony seems genuine on the surface. However, with a little bit of deduction, the audience are able to see that the composition is clearly sarcastic and disobedient.</li>
+<li>Sounds chirpy and unconcerned.</li>
 <li>Shostakovich’s actual composition is very inappropriate for the event.</li>
-<li>few adjectives to describe would be </li>
 </ul>
 <p><a href="https://www.youtube.com/watch?v=MCxzMYVvHBg" target="_blank" rel="noopener">Shostakovich - How to Compose Music Despite [ R E D A C T E D ]</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/09/22/school2/music/social%20political/" data-id="ckfdwo6zb0003gstx0dy6ai1a" class="article-share-link">Share</a>
+      <a data-url="http://u6771.github.io/2020/09/22/school2/music/social%20political/" data-id="ckfjfx90w0006qotx8fltfmjz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -293,72 +638,29 @@ S(g_n) = g_1\frac{1-q^n}{1-q}</script><p>$S(g_n)$ converges for any $q&lt;1$, be
 <script type="math/tex; mode=display">
 \Delta a = \Delta b + \Delta c.</script><h3 id="times-or-divides"><a href="#times-or-divides" class="headerlink" title="times or divides"></a>times or divides</h3><p>For $a = b c$ or $a = \frac{b}{c}$,</p>
 <script type="math/tex; mode=display">
-\Delta a = a(\frac{\Delta b}{b} + \frac{\Delta c}{c}) + \Delta b\Delta c.</script><p>*Because $\Delta b\Delta c \to 0$ if $\Delta b$ or $\Delta c \to 0$, $\Delta b\Delta c$ can be neglected.</p>
-<h3 id="powers"><a href="#powers" class="headerlink" title="powers"></a>powers</h3><p>For $a = b^m$</p>
+\Delta a = a(\frac{\Delta b}{b} + \frac{\Delta c}{c}).</script><details>
+<summary>
+Show derivation
+</summary>
+$$
+\begin{align}
+\Delta a 
+&= (b+\Delta b)(c+\Delta c) - bc\\
+&= bc + b\Delta c + c\Delta b + \Delta b\Delta c - bc\\
+&= bc\frac{\Delta c}{c} + bc\frac{\Delta b}{b} + \Delta b\Delta c\\
+&= a(\frac{\Delta b}{b} + \frac{\Delta c}{c}) + \Delta b\Delta c
+\end{align}
+$$
+*Because $\Delta b\Delta c \to 0$ if $\Delta b$ or $\Delta c \to 0$, $\Delta b\Delta c$ can be neglected.
+</details>
+
+<h3 id="powers"><a href="#powers" class="headerlink" title="powers"></a>powers</h3><p>For $a = b^m$，</p>
 <script type="math/tex; mode=display">
 \Delta a = a(m\frac{\Delta b}{b}).</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/09/22/school2/physics/error-terms/" data-id="ckfdwo6zc0004gstx0ne20yfk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-school2/economics/chapter 1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/22/school2/economics/chapter%201/" class="article-date">
-  <time datetime="2020-09-21T16:00:00.000Z" itemprop="datePublished">2020-09-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/economics/">economics</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/22/school2/economics/chapter%201/">Chapter 1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="Leakages"><a href="#Leakages" class="headerlink" title="Leakages"></a>Leakages</h3><ul>
-<li>Taxes</li>
-<li>Saving</li>
-<li>Imports</li>
-</ul>
-<h3 id="Injections"><a href="#Injections" class="headerlink" title="Injections"></a>Injections</h3><ul>
-<li>Government spending</li>
-<li>Investment</li>
-<li>Exports</li>
-</ul>
-<h3 id="Nominal-GDP-Formula"><a href="#Nominal-GDP-Formula" class="headerlink" title="Nominal GDP Formula"></a>Nominal GDP Formula</h3><script type="math/tex; mode=display">
-C+I+G+(X-M)</script><ul>
-<li>C: Consumption</li>
-<li>I: Investment</li>
-<li>G: Government spending</li>
-<li>X: Exports</li>
-<li>M: Imports</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/09/22/school2/economics/chapter%201/" data-id="ckfdwo6ze0009gstxageb2h4s" class="article-share-link">Share</a>
+      <a data-url="http://u6771.github.io/2020/09/22/school2/physics/error-terms/" data-id="ckfjfx911000dqotxgg8vcj8l" class="article-share-link">Share</a>
       
       
     </footer>
@@ -406,23 +708,23 @@ C+I+G+(X-M)</script><ul>
       <ul>
         
           <li>
+            <a href="/2020/09/25/school2/math/linear%20algebra/">Notes on linear algerba</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/24/school2/perspective/">school2/perspective</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/24/school2/physics/linearization-of-logarithmic-functions/">Linearization of logarithmic functions</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/23/school2/music/rationale/">Rationale</a>
+          </li>
+        
+          <li>
             <a href="/2020/09/22/school2/Untitled/">school2/Untitled</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/22/school2/chinese/%E8%AF%AD%E5%A2%83/">语境</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/22/school2/math/series/">Series</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/22/school2/music/social%20political/">Social Political Music</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/22/school2/physics/error-terms/">Error Terms</a>
           </li>
         
       </ul>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Notes on linear algerba | 欢迎🤡的光顾！</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MathJax.Hub.Config({ extensions: [&quot;tex2jax.js&quot;], tex2jax: {inlineMath: [[&quot;$&quot;,&quot;$&quot;],[&quot;\\(&quot;,&quot;\\)&quot;]]}, TeX: { extensions: [&quot;AMSmath.js&quot;,&quot;AMSsymbols.js&quot;,&quot;MathMenu.js&quot;,  &quot;MathZoom.js&quot;, &quot;color.js&quot;, &quot;https:&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notes on linear algerba">
+<meta property="og:url" content="http://u6771.github.io/2020/09/25/school2/math/linear%20algebra/index.html">
+<meta property="og:site_name" content="欢迎🤡的光顾！">
+<meta property="og:description" content="MathJax.Hub.Config({ extensions: [&quot;tex2jax.js&quot;], tex2jax: {inlineMath: [[&quot;$&quot;,&quot;$&quot;],[&quot;\\(&quot;,&quot;\\)&quot;]]}, TeX: { extensions: [&quot;AMSmath.js&quot;,&quot;AMSsymbols.js&quot;,&quot;MathMenu.js&quot;,  &quot;MathZoom.js&quot;, &quot;color.js&quot;, &quot;https:&#x2F;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-09-26T08:53:55.719Z">
+<meta property="article:author" content="兄弟会">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="欢迎🤡的光顾！" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">欢迎🤡的光顾！</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我太难了！</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://u6771.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-school2/math/linear algebra" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/25/school2/math/linear%20algebra/" class="article-date">
+  <time datetime="2020-09-24T16:00:00.000Z" itemprop="datePublished">2020-09-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/math/">math</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Notes on linear algerba
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+extensions: ["tex2jax.js"],
+tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","MathMenu.js", 
+"MathZoom.js",
+"color.js", "https://sonoisa.github.io/xyjax_ext/xypic.js"],
+Macros: {
+Ker: "{\\mathop{\\mathrm{Ker}}}",
+Im: "{\\mathop{\\mathrm{Im}}}"
+}
+}
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<h2 id="Mathjax-macro-test"><a href="#Mathjax-macro-test" class="headerlink" title="Mathjax macro test"></a>Mathjax macro test</h2><script type="math/tex; mode=display">
+\dim U = \dim \Ker(T) + \dim \Im(T)</script><h2 id="Definition-a-linear-maps"><a href="#Definition-a-linear-maps" class="headerlink" title="Definition a linear maps"></a>Definition a linear maps</h2><p>A linear map $T: U \to V$, where $U$ is $n$-dimensional and $V$ is $m$ dimensional is defined in the form:</p>
+<script type="math/tex; mode=display">
+T(y_{1}, \cdots, y_{n}) = (x_{1}, \cdots, x_{m}),</script><p>where</p>
+<script type="math/tex; mode=display">
+x_{i} = \sum_{j=1}^{n}a_{i,j}y_{j},
+\ a_{i,j},y_{j} \in \mathbb{R},
+\ i \in \{1, \cdots ,m\},
+\ j \in \{1, \cdots ,n\}.</script><p>A way to understand linear maps is to see each $x_{i}$ as a linear combination of the 1-dimensional vectors $y_{j}$’s with scalars $a_{i,j}$’s.</p>
+<script type="math/tex; mode=display">
+T(y_{1}, \cdots, y_{n})
+= \sum_{j=1}^{n}y_{j}(a_{1,j}, \cdots, a_{m,j})</script><h2 id="Properties-of-linear-maps"><a href="#Properties-of-linear-maps" class="headerlink" title="Properties of linear maps"></a>Properties of linear maps</h2><h3 id="Additivity-“-T-u-1-u-2-T-u-1-T-u-2-”"><a href="#Additivity-“-T-u-1-u-2-T-u-1-T-u-2-”" class="headerlink" title="Additivity “$T(u_{1}+u_{2}) = T(u_{1})+T(u_{2})$”"></a>Additivity “$T(u_{1}+u_{2}) = T(u_{1})+T(u_{2})$”</h3><p>$y_{j}, z_{j} \in F$</p>
+<script type="math/tex; mode=display">
+\begin{align}
+T(y_{1}+z_{1}, \cdots, y_{n}+z_{n})
+&= (\sum_{j=1}^{n}a_{1,j}(y_{j}+z_{j}), \cdots, \sum_{j=1}^{n}a_{m,j}(y_{j}+z_{j}))\\
+&= (\sum_{j=1}^{n}(a_{1,j}y_{j} + a_{1,j}z_{j}), \cdots, \sum_{j=1}^{n}(a_{m,j}y_{j} + a_{m,j}z_{j}))
+&& \text{(by distributivity)}\\
+&= (\sum_{j=1}^{n}a_{1,j}y_{j} + \sum_{j=1}^{n}a_{1,j}z_{j}, \cdots, \sum_{j=1}^{n}a_{m,j}y_{j} + \sum_{j=1}^{n}a_{m,j}z_{j})
+&& \text{(by commutativity of addition)}\\
+&= (\sum_{j=1}^{n}a_{1,j}y_{j}, \cdots, \sum_{j=1}^{n}a_{m,j}y_{j})
++ (\sum_{j=1}^{n}a_{1,j}z_{j}, \cdots, \sum_{j=1}^{n}a_{m,j}z_{j})\\
+&= T(y_{1}, \cdots, y_{n}) + T(z_{1}, \cdots, z_{n})
+\end{align}</script><h3 id="Homogeneity-“-T-lambda-u-lambda-T-u-”"><a href="#Homogeneity-“-T-lambda-u-lambda-T-u-”" class="headerlink" title="Homogeneity “$T(\lambda u) = \lambda T(u)$”"></a>Homogeneity “$T(\lambda u) = \lambda T(u)$”</h3><p>$\lambda, y_{j} \in F$</p>
+<script type="math/tex; mode=display">
+\begin{align}
+T(\lambda y_{1}, \cdots, \lambda y_{n})
+&= (\sum_{j=1}^{n}a_{1,j}(\lambda y_{j}), \cdots, \sum_{j=1}^{n}a_{m,j}(\lambda y_{j}))\\
+&= (\sum_{j=1}^{n}\lambda(a_{1,j}y_{j}), \cdots, \sum_{j=1}^{n}\lambda(a_{m,j}y_{j}))
+&& \text{(by commutativity of multiplication)}\\
+&= (\lambda(\sum_{j=1}^{n}a_{1,j}y_{j}), \cdots, \lambda(\sum_{j=1}^{n}a_{m,j}y_{j}))
+&& \text{(by distributivity)}\\
+&= \lambda(\sum_{j=1}^{n}a_{1,j}y_{j}, \cdots, \sum_{j=1}^{n}a_{m,j}y_{j})\\
+&= \lambda T(y_{1}, \cdots, y_{n})
+\end{align}</script><h2 id="Invertability-is-equivalent-to-injectivity-and-surjectivity"><a href="#Invertability-is-equivalent-to-injectivity-and-surjectivity" class="headerlink" title="Invertability is equivalent to injectivity and surjectivity"></a>Invertability is equivalent to injectivity and surjectivity</h2><h3 id="An-invertable-linear-map-is-injective"><a href="#An-invertable-linear-map-is-injective" class="headerlink" title="An invertable linear map is injective"></a>An invertable linear map is injective</h3><script type="math/tex; mode=display">
+u_{1} = T^{-1}(Tu_{1}) = T^{-1}(Tu_{2}) = u_{2}</script><h3 id="An-invertable-linear-map-is-surjective"><a href="#An-invertable-linear-map-is-surjective" class="headerlink" title="An invertable linear map is surjective"></a>An invertable linear map is surjective</h3><script type="math/tex; mode=display">
+T(T^{-1}v) = v</script><h3 id="An-injective-and-surjective-map-is-invertable"><a href="#An-injective-and-surjective-map-is-invertable" class="headerlink" title="An injective and surjective map is invertable"></a>An injective and surjective map is invertable</h3><script type="math/tex; mode=display">
+\xymatrix{
+U\ar@/^/[rr]^{T} && V\ar@/^/[ll]^{S}
+}</script><script type="math/tex; mode=display">
+T(Sv)= v</script><p>The existence and uniqueness of the equation above is suggested by the surjectivity and injectivity of $T$.</p>
+<script type="math/tex; mode=display">
+T(S \circ Tu) = T \circ S(Tu) = T(u)</script><h3 id="S-is-linear"><a href="#S-is-linear" class="headerlink" title="S is linear"></a>S is linear</h3><script type="math/tex; mode=display">
+\begin{align}
+T(Sv_{1}+Sv_{2})
+= T \circ S(v_{1}) + T \circ S(v_{2})
+= v_{1} + v_{2}
+= T(S(v_{1}+v_{2}))
+\end{align}</script><p>Because $T$ is injective, $S(v_{1}+v_{2}) = Sv_{1}+Sv_{2}$. $S$ is additive.</p>
+<script type="math/tex; mode=display">
+T(\lambda Sv) = \lambda T \circ S(v) = \lambda v = T(S(\lambda v))</script><p>Because $T$ is injective, $S(\lambda v) = \lambda Sv$. $S$ is homogeneous. $\square$</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://u6771.github.io/2020/09/25/school2/math/linear%20algebra/" data-id="ckfjfx90y0009qotxel7phw1m" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/09/24/school2/perspective/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">school2/perspective</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/chinese/">chinese</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/economics/">economics</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/math/">math</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/music/">music</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/physics/">physics</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/25/school2/math/linear%20algebra/">Notes on linear algerba</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/24/school2/perspective/">school2/perspective</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/24/school2/physics/linearization-of-logarithmic-functions/">Linearization of logarithmic functions</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/23/school2/music/rationale/">Rationale</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/22/school2/Untitled/">school2/Untitled</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 兄弟会<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
+</html>
