@@ -40,7 +40,7 @@
 <meta property="og:site_name" content="academic-blog">
 <meta property="og:description" content="Arithmetic seriesAn arithmetic series is a sequence in which every two consecutive terms have a common difference - “$d$”. a_n &#x3D; a_1 + (n-1)dS_{a}(a_1,d,n) &#x3D; n\frac{2a_1+(n-1)d}{2} &#x3D; n\frac{a_1+a_n}{2">
 <meta property="article:published_time" content="2020-09-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-18T15:22:04.855Z">
+<meta property="article:modified_time" content="2020-10-20T09:16:08.169Z">
 <meta property="article:author" content="kechao chen">
 <meta name="twitter:card" content="summary">
 
@@ -136,14 +136,15 @@
 <script type="math/tex; mode=display">g_n = g_1q^{n-1}</script><script type="math/tex; mode=display">S_{g}(g_1,q,n) = g_1\frac{1-q^n}{1-q}</script><p>$Sg$ converges for any $q&lt;1$, because $q^n \to 0$ as $n \to \infty$. Therefore we can find a formula for the infinite sum of a geometric sequence as the following.</p>
 <script type="math/tex; mode=display">\lim_{n \to \infty} S_{g}(a_1,q,n) 
 = \lim_{n \to \infty} g_1\frac{1-q^n}{1-q} 
-= \frac{g_1}{1-q}</script><h1 id="Other-series"><a href="#Other-series" class="headerlink" title="Other series"></a>Other series</h1><script type="math/tex; mode=display">
-\begin{align}
-a_1,\quad a_2,\quad a_3,\quad a_4\\
-b_1, \quad b_2, \quad b_3 \quad \,
-\end{align}</script><p>For sequences in which every two consecutive terms have a difference $a_n-a_{n-1}$ equal to a corresponding term $b_{n-1}$ in an arithmetic sequence, its rule is</p>
-<script type="math/tex; mode=display">a_n = a_1 + S_a(b_1,d,n)
-= a_1 + (n-1)\frac{2b_1+(n-2)d}{2}
-= a_1 + (n-1)\frac{b_1+b_{n-1}}{2}.</script>
+= \frac{g_1}{1-q}</script><h1 id="Other-series"><a href="#Other-series" class="headerlink" title="Other series"></a>Other series</h1><script type="math/tex; mode=display">\begin{array}{l}
+a_1 && a_2 && a_3 && a_4\\
+& b_1 && b_2 && b_3
+\end{array}</script><p>For sequences in which every two consecutive terms have a difference $a_n-a_{n-1}$ equal to a corresponding term $b_{n-1}$ in an arithmetic sequence, its rule is</p>
+<script type="math/tex; mode=display">\begin{aligned}
+a_n &= a_1 + S_a(b_1,d,n-1) \\
+&= a_1 + (n-1)\frac{2b_1+(n-2)d}{2} \\
+&= a_1 + (n-1)\frac{b_1+b_{n-1}}{2}.
+\end{aligned}</script>
             </div>
           
 
@@ -155,12 +156,18 @@ b_1, \quad b_2, \quad b_3 \quad \,
         
   <nav class="post-nav">
     
-      <a class="prev" href="/2020/09/22/school2/economics/economics-notebook/">
+      <a class="prev" href="/2020/09/22/school2/chinese/%E8%AF%AD%E5%A2%83/">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">economics-notebook</span>
+        <span class="prev-text nav-default">语境</span>
         <span class="prev-text nav-mobile">prev</span>
       </a>
     
+    
+      <a class="next" href="/2020/09/22/school2/music/shostakovich-sym9/">
+        <span class="next-text nav-default">shostakovich-sym9</span>
+        <span class="prev-text nav-mobile">next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
