@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url("../fonts/iAWriterQuattroS/iAWriterQuattroS-Regular.eot");
+  src: local("iA Writer Quattro S"), url("../fonts/iAWriterQuattroS/iAWriterQuattroS-Regular.eot?#iefix") format("embedded-opentype"), url(".../fonts/iAWriterQuattroS/iAWriterQuattroS-Regular.woff2") format("woff2"), url("../fonts/iAWriterQuattroS/iAWriterQuattroS-Regular.woff") format("woff"), url("../fonts/iAWriterQuattroS/iAWriterQuattroS-Regular.ttf") format("truetype"); }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -372,7 +377,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+  font-family: "iA Writer Quattro S";
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -391,30 +396,6 @@ img {
 a {
   color: rgba(0, 0, 0, 0.75);
   text-decoration: none; }
-
-h1 {
-  font-size: 1.5rem;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
-
-h2 {
-  font-size: 1.4rem;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
-
-h3 {
-  font-size: 1.3rem;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
-
-h4 {
-  font-size: 1.2rem;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
-
-h5 {
-  font-size: 1.1rem;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
-
-h6 {
-  font-size: 1rem;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
 
 .content-wrapper {
   padding: 0 20px; }
@@ -485,8 +466,8 @@ h6 {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15); }
 
 .site-header-inner {
-  height: 65px;
-  line-height: 65px;
+  height: 64px;
+  line-height: 64px;
   max-width: 1000px;
   margin: 0 auto;
   width: 90%; }
@@ -496,7 +477,7 @@ h6 {
   display: inline-block;
   margin: 0 auto;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   color: rgba(0, 0, 0, 0.7); }
 
 #nav-top {
@@ -525,9 +506,9 @@ h6 {
   .post .post-header .post-title {
     margin: 0 0 10px;
     line-height: 1.4;
-    font-size: 1.3em;
-    font-weight: 550;
-    font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "iA Writer Quattro S"; }
   .post .post-header .post-link {
     display: inline-block;
     vertical-align: middle;
@@ -549,34 +530,34 @@ h6 {
   .post .post-content {
     margin-bottom: 40px; }
     .post .post-content h1 {
-      font-size: 1.3em;
-      font-weight: 400;
-      font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: "iA Writer Quattro S";
       margin-top: 1.2em; }
     .post .post-content h2 {
-      font-size: 1.3em;
-      font-weight: 400;
-      font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: "iA Writer Quattro S";
       margin-top: 1.2em; }
     .post .post-content h3 {
-      font-size: 1.3em;
-      font-weight: 400;
-      font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: "iA Writer Quattro S";
       margin-top: 1.2em; }
     .post .post-content h4 {
-      font-size: 1.3em;
-      font-weight: 400;
-      font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: "iA Writer Quattro S";
       margin-top: 1.2em; }
     .post .post-content h5 {
-      font-size: 1.3em;
-      font-weight: 400;
-      font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: "iA Writer Quattro S";
       margin-top: 1.2em; }
     .post .post-content h6 {
-      font-size: 1.3em;
-      font-weight: 400;
-      font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+      font-size: 1em;
+      font-weight: 600;
+      font-family: "iA Writer Quattro S";
       margin-top: 1.2em; }
     .post .post-content .headerlink:hover {
       border-bottom: 0; }
@@ -724,13 +705,13 @@ h6 {
     .post .post-content .read-more .read-more-link {
       color: #4D89FB;
       font-size: 1.1em;
-      font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
+      font-family: "iA Writer Quattro S"; }
       .post .post-content .read-more .read-more-link:hover {
         border-bottom: 1px solid #4D89FB; }
   .post .post-footer {
     margin-top: 20px;
     border-top: 1px solid #eee;
-    font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
+    font-family: "iA Writer Quattro S"; }
     .post .post-footer .post-tags {
       padding: 15px 0; }
       .post .post-footer .post-tags a {
@@ -751,7 +732,7 @@ h6 {
         font-weight: 400;
         font-size: 16px;
         color: rgba(0, 0, 0, 0.75);
-        font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+        font-family: "iA Writer Quattro S";
         transition-property: transform;
         transition-timing-function: ease-out;
         transition-duration: 0.3s; }
@@ -784,7 +765,7 @@ h6 {
   .pagination .next {
     font-weight: 400;
     font-size: 16px;
-    font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+    font-family: "iA Writer Quattro S";
     transition-property: transform;
     transition-timing-function: ease-out;
     transition-duration: 0.3s; }
@@ -876,7 +857,7 @@ h6 {
   .archive .archive-post + .collection-title {
     margin-top: 30px; }
   .archive .archive-title {
-    font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
+    font-family: "iA Writer Quattro S"; }
     .archive .archive-title.tag, .archive .archive-title.category {
       margin: 15px 0; }
     .archive .archive-title .archive-name {
@@ -886,7 +867,7 @@ h6 {
       font-size: 29px;
       line-height: 31px; }
   .archive .collection-title {
-    font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+    font-family: "iA Writer Quattro S";
     font-size: 29px; }
     .archive .collection-title .archive-year {
       margin: 18px 0;
@@ -920,7 +901,7 @@ h6 {
 .tag-cloud {
   margin: 2em 0 3em;
   text-align: center;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
+  font-family: "iA Writer Quattro S"; }
   .tag-cloud .tag-cloud-title {
     display: inline-block;
     font-size: 18px;
@@ -943,7 +924,7 @@ h6 {
 .categories {
   margin: 2em 0 3em;
   text-align: center;
-  font-family: "iA Writer Quattro S", "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif; }
+  font-family: "iA Writer Quattro S"; }
   .categories .categories-title {
     display: inline-block;
     font-size: 18px;
