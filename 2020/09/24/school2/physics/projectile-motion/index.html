@@ -40,7 +40,7 @@
 <meta property="og:site_name" content="academic-blog">
 <meta property="og:description" content="Notations $s_x:&#x3D;s_x(t)$: horizontal displacement after some time $t$. $s_y:&#x3D;s_y(t)$: vertical displacement after some time $t$. $u_x&#x3D;v_x(0)$: initial horizontal velocity. $u_y&#x3D;v_y(0)$: initial vertica">
 <meta property="article:published_time" content="2020-09-23T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-24T01:51:16.086Z">
+<meta property="article:modified_time" content="2020-10-24T02:10:30.895Z">
 <meta property="article:author" content="kechao chen">
 <meta name="twitter:card" content="summary">
 
@@ -162,9 +162,10 @@ s_y&=v_yt-\frac{1}{2}(-g)t^2\\
 &=v_yt+\frac{1}{2}gt^2\\
 &=v\sin(\theta)t+\frac{1}{2}gt^2
 \end{aligned}</script><h1 id="Displacement-in-x-direction"><a href="#Displacement-in-x-direction" class="headerlink" title="Displacement in x-direction"></a>Displacement in x-direction</h1><script type="math/tex; mode=display">\begin{aligned}
-s_x&=u_xt\\
+s_x&=u_xt+\frac{1}{2}a_xt^2\\
+&=u_xt+0\\
 &=u\cos(\theta)t
-\end{aligned}</script><h1 id="Time-to-reach-maximum-height"><a href="#Time-to-reach-maximum-height" class="headerlink" title="Time to reach maximum height"></a>Time to reach maximum height</h1><script type="math/tex; mode=display">t_h:t, s_y(t)=\max s_y</script><p>Since $s_y(t_h)$ is the maxima of the function $s_y$, its derivative at $t_h$ - $v_y(t_h)$ should be equal to $0$.</p>
+\end{aligned}</script><h1 id="Time-to-reach-maximum-height"><a href="#Time-to-reach-maximum-height" class="headerlink" title="Time to reach maximum height"></a>Time to reach maximum height</h1><script type="math/tex; mode=display">t_h:=t,\,s_y(t)=\max s_y</script><p>Since $s_y(t_h)$ is the maxima of the function $s_y$, its derivative at $t_h$ - $v_y(t_h)$, is equal to $0$.</p>
 <script type="math/tex; mode=display">\begin{aligned}
 t_h&=\frac{v_y(t_h)-u_y}{-g}\\
 &=\frac{0-u\sin\theta}{-g}\\
@@ -174,7 +175,8 @@ h&=v_y(t_h)t_h+\frac{1}{2}gt_h^2\\
 &=0+\frac{1}{2}g\left(\frac{u\sin\theta}{g}\right)^2\\
 &=\frac{1}{2}\left(\frac{u^2(\sin\theta)^2}{g}\right)\\
 &=\frac{1}{2g}u^2(\sin\theta)^2
-\end{aligned}</script><h1 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h1><script type="math/tex; mode=display">r:=\max s_x,\,s_y \geq 0</script><script type="math/tex; mode=display">\begin{aligned}
+\end{aligned}</script><h1 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h1><script type="math/tex; mode=display">r:=s_x(t),\,s_y(t) = 0</script><p>It takes twice the time $t_h$ for the projectile to land on the ground.</p>
+<script type="math/tex; mode=display">\begin{aligned}
 r&=2t_{h}u_x\\
 &=2\left(\frac{u\sin\theta}{g}\right)(u\cos\theta)\\
 &=\frac{1}{g}u^2(2\sin\theta\cos\theta)\\
